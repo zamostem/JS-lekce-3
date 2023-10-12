@@ -45,6 +45,9 @@ const pizzeria = {
         cislo_popisne: 23,
         PSC: "160 00",
         mesto: "Praha",
+        test: {
+            polozka: "polozka",
+        },
     },
     nej_pizza: "Hawaii",
 }
