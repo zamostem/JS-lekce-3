@@ -12,3 +12,43 @@ document.body.innerHTML += "<p>Výplata: " + vyplata + " Kč</p>"
 document.body.innerHTML += "<p>Výplata s odměnou: " + (vyplata + odmena) + " Kč</p>"
 document.body.innerHTML += "<p>Test: " + Number("10 000") + "</p>" // NaN = Not a Number, čísla nelze psát s mezerou, mezera je braná jako znak
 
+// objekty
+//const adresa = "Opletalova 42, 110 00 Praha"
+
+//const ulice = "Opletalova"
+//const cislo_popisne = 42
+//const PSC = 11000
+//const mesto = "Praha"
+
+const adresa = {
+    ulice: "Opletalova",
+    cislo_popisne: 42,
+    PSC: 11000,
+    mesto: "Praha",
+}
+
+document.body.innerHTML += "<p>" + adresa.ulice + "</p>"
+document.body.innerHTML += "<p>" + adresa.cislo_popisne + "</p>"
+document.body.innerHTML += "<p>" + adresa.PSC + "</p>"
+document.body.innerHTML += "<p>" + adresa.mesto + "</p>"
+
+adresa.ulice = "Belohorska"
+
+document.body.innerHTML += "<p>" + adresa.ulice + "</p>"
+
+
+const pizzeria = {
+    nazev: "U Žofie",
+    hodnoceni: 4.3,
+    adresa: {
+        ulice: "Belohorska",
+        cislo_popisne: 23,
+        PSC: "160 00",
+        mesto: "Praha",
+    },
+    nej_pizza: "Hawaii",
+}
+
+document.body.innerHTML += "<p>" + pizzeria.nazev + "</p>"
+document.body.innerHTML += "<p>" + pizzeria.hodnoceni + "</p>"
+document.body.innerHTML += "<p>" + pizzeria.adresa.ulice + "</p>"
