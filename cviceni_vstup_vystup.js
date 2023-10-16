@@ -13,4 +13,4 @@ const hodinova_sazba = Number(prompt("Zadej hodinovou sazbu")) // 500,-
 const pocet_hodin = Number(prompt("Zadej pocet hodin za den")) // 500,-
 const pocet_dni = Number(prompt("Zadej pocet dni v mesici")) // 500,-
 
-document.body.innerHTML += "<p>Vaše hrubá mzda: " + (hodinova_sazba * pocet_hodin * pocet_dni) + " Kč</p>"
+document.body.innerHTML += "<p>Vaše hrubá mzda: " + (hodinova_sazba * pocet_hodin * pocet_dni) + " Kč</p>";
