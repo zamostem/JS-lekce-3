@@ -1,4 +1,12 @@
-// cvičení 1 - realitka
+/* cvičení 1 - realitka
+Vytvořte webovou stránku s JavaScriptem, zkopírujte si tento kód do vašeho programu a vyřešte následující úkoly.
+
+Pomocí tečkové notace vypište do stránky dispozici bytu.
+Vypište do stránky čistý nájem bez poplatků.
+Vypište do stránky celý objekt představující výměru bytu.
+Do separátních proměnných uložte město a městskou část. Vypište je do stránky.
+Změnte stav inzerátu z 'free' na 'taken'.
+*/
 const apartment = {
     type: 'rent',
     disposition: '3+1',
@@ -37,7 +45,10 @@ document.body.innerHTML += "<p>Městská část: " + district + "</p>"
 apartment.status = "taken"
 document.body.innerHTML += "<p>Stav inzerátu: " + apartment.status + "</p>"
 
-// cvičení 2 - knihovna
+/* cvičení 2 - knihovna
+V JavaScriptovém programu vytvořte objekt představující jednu knihu v knihovně. Uvažte, jaké vlastnosti může taková kniha mít. Rozhodně budeme chtít název, autora a počet stran. Přidejte do objektu alespoň tři další vlastnosti tak, aby obsahovaly čísla, řetězce i vnořený objekt.
+Vytvořte alespoň jednu další knihu se stejnými vlastnostmi ale jinými hodnotami.
+*/
 const kniha = {
     nazev: "Harry Potter",
     autor: "J. K. Rowling",
@@ -51,7 +62,17 @@ const kniha = {
     vydavatelstvi: "Albatros",
 }
 
-// cvičení 3 - očkování
+/* cvičení 3 - očkování
+Pokračujme v našem registračním systému na očkováni. Zatím se umíme uživatele zeptat na jméno a věk.
+
+Vytvořte objekt person, do kterého vložte uživatelem zadané údaje. Objekt bude mít následující strukturu
+{
+  name: 'Květoslav Voňavý',
+  age: 67,
+}
+Přidejte do objektu person údaj o tom, v jakém jazyce si uživatel přeje komunikovat. Zjistěte jej z objektu window.
+Poté, co uživatel zadá všechny údaje, vypište do stránky objekt person se všemi jeho vlastnostmi v nějakém hezkém formátu a zkontrolujte, že obsahuje správné informace.
+*/
 const jmeno = prompt("Zadej jmeno")
 const vek = Number(prompt("Zadej vek"))
 
